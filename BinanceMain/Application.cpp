@@ -268,12 +268,15 @@ void Application::Run()
 		int minutes = ltm->tm_hour * 60 + ltm->tm_min;
 
 		// Update All //
-		for (auto& background : this->backgrounds)
+		std::for_each(this->backgrounds.begin(), this->backgrounds.end(), [this, &eventControl](UI::SolidBackground background) {
 			background.Update(this->window, eventControl);
-		for (auto& amountDeal : this->amountDeals)
+			});
+		std::for_each(this->amountDeals.begin(), this->amountDeals.end(), [this, &eventControl, &minutes](AmountDeals amountDeal) {
 			amountDeal.Update(this->window, eventControl, minutes);
-		for (auto& lable : this->lables)
-			lable.Update(this->window, eventControl);
+			});
+		std::for_each(this->lables.begin(), this->lables.end(), [this, &eventControl](UI::TextLable<std::wstring> amountDeal) {
+			amountDeal.Update(this->window, eventControl);
+			});
 
 		this->time->SetText(GetStrTime(ltm));
 		this->time->Update(this->window, eventControl);
