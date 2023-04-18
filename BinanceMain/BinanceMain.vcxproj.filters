@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="AmountDeals.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Background.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Button.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Element.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Exception.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Input.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Lable.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Manager.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Text.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Timer.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\api.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\dtf.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\enums.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\errors.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\pairslist.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\reports.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\tools.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\types.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+    <ClCompile Include="binapi\websocket.cpp">
+      <Filter>binapi</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{f99b42fc-244d-4c99-a319-f90c6150225c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e701d7ac-6e6d-4699-9df8-33a50d0aab0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{ccced86a-6412-453a-82e8-ba6e3d507646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="binapi">
+      <UniqueIdentifier>{af81990d-0c52-4c45-946f-11c1d7a56f59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AmountDeals.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Background.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Button.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Element.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Exception.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Input.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Lable.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Macro.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Manager.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Text.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Timer.hpp">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\api.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\double_type.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\dtf.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\enums.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\errors.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\flatjson.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\fnv1a.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\invoker.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\iofmt.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\message.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\pairslist.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\reports.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\tools.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\types.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+    <ClInclude Include="binapi\websocket.hpp">
+      <Filter>binapi</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

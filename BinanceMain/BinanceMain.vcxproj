@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c0d8c853-d0ed-43ae-8137-823a83bef1ad}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>BinanceMain</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetExt>.out</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="AmountDeals.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="binapi\api.cpp" />
+    <ClCompile Include="binapi\dtf.cpp" />
+    <ClCompile Include="binapi\enums.cpp" />
+    <ClCompile Include="binapi\errors.cpp" />
+    <ClCompile Include="binapi\pairslist.cpp" />
+    <ClCompile Include="binapi\reports.cpp" />
+    <ClCompile Include="binapi\tools.cpp" />
+    <ClCompile Include="binapi\types.cpp" />
+    <ClCompile Include="binapi\websocket.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UI\Background.cpp" />
+    <ClCompile Include="UI\Button.cpp" />
+    <ClCompile Include="UI\Element.cpp" />
+    <ClCompile Include="UI\Exception.cpp" />
+    <ClCompile Include="UI\Input.cpp" />
+    <ClCompile Include="UI\Lable.cpp" />
+    <ClCompile Include="UI\Manager.cpp" />
+    <ClCompile Include="UI\Text.cpp" />
+    <ClCompile Include="UI\Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AmountDeals.hpp" />
+    <ClInclude Include="Application.hpp" />
+    <ClInclude Include="binapi\api.hpp" />
+    <ClInclude Include="binapi\double_type.hpp" />
+    <ClInclude Include="binapi\dtf.hpp" />
+    <ClInclude Include="binapi\enums.hpp" />
+    <ClInclude Include="binapi\errors.hpp" />
+    <ClInclude Include="binapi\flatjson.hpp" />
+    <ClInclude Include="binapi\fnv1a.hpp" />
+    <ClInclude Include="binapi\invoker.hpp" />
+    <ClInclude Include="binapi\iofmt.hpp" />
+    <ClInclude Include="binapi\message.hpp" />
+    <ClInclude Include="binapi\pairslist.hpp" />
+    <ClInclude Include="binapi\reports.hpp" />
+    <ClInclude Include="binapi\tools.hpp" />
+    <ClInclude Include="binapi\types.hpp" />
+    <ClInclude Include="binapi\websocket.hpp" />
+    <ClInclude Include="Macro.hpp" />
+    <ClInclude Include="UI\Background.hpp" />
+    <ClInclude Include="UI\Button.hpp" />
+    <ClInclude Include="UI\Element.hpp" />
+    <ClInclude Include="UI\Exception.hpp" />
+    <ClInclude Include="UI\Input.hpp" />
+    <ClInclude Include="UI\Lable.hpp" />
+    <ClInclude Include="UI\Macro.hpp" />
+    <ClInclude Include="UI\Manager.hpp" />
+    <ClInclude Include="UI\Text.hpp" />
+    <ClInclude Include="UI\Timer.hpp" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <LibraryDependencies>sfml-window;sfml-system;sfml-graphics;sfml-network;sfml-audio;z
+;crypto;ssl;pthread;jsoncpp;%(LibraryDependencies)</LibraryDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-L/usr/include/jsoncpp/ %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
